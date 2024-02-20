@@ -1,7 +1,7 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://soraai.me/", // replace this with your deployed domain
+  website: "astro-paper-demo-orcin.vercel.app/", // replace this with your deployed domain
   author: "Sat Naing",
   desc: "An introduction and demonstration of the Sora text-to-video tool. ",
   title: "sora",
