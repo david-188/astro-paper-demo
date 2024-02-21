@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://soraai.me/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://soraai.me/posts/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://soraai.me/tags/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://soraai.me/about/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://soraai.me/search/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://soraai.me/posts/how-to-configure-astropaper-theme/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://soraai.me/posts/astro-paper-v4/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://soraai.me/posts/adding-new-posts-in-astropaper-theme/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://soraai.me/posts/setting-dates-via-git-hooks/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://soraai.me/posts/how-to-add-a-new-social-icon/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://soraai.me/posts/predefined-color-schemes/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://soraai.me/posts/how-to-add-estimated-reading-time/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://soraai.me/posts/2/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://soraai.me/tags/astro/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://soraai.me/tags/astro-paper/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://soraai.me/tags/blog/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://soraai.me/tags/color-schemes/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://soraai.me/tags/configuration/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://soraai.me/tags/contextapi/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://soraai.me/tags/docs/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://soraai.me/tags/faq/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://soraai.me/tags/forestry-cms/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://soraai.me/tags/headlesscms/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://soraai.me/tags/javascript/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://soraai.me/tags/nextjs/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://soraai.me/tags/reactjs/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://soraai.me/tags/release/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://soraai.me/tags/styled-components/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://soraai.me/tags/tailwindcss/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://soraai.me/tags/typescript/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://soraai.me/posts/3/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://soraai.me/posts/tailwind-typography/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://soraai.me/posts/how-to-connect-astro-paper-blog-with-forestry-cms/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://soraai.me/posts/how-do-i-develop-my-portfolio-and-blog/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://soraai.me/posts/customizing-astropaper-theme-color-schemes/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://soraai.me/posts/how-do-i-develop-my-terminal-portfolio-website-with-react/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://soraai.me/tags/docs/2/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://soraai.me/tags/faq/2/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://soraai.me/posts/astro-paper-v3/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://soraai.me/posts/astro-paper-2/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://soraai.me/tags/release/2/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://soraai.me/posts/how-to-update-dependencies/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://soraai.me/posts/4/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://soraai.me/posts/dynamic-og-image-generation-in-astropaper-blog-posts/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://soraai.me/posts/5/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://soraai.me/posts/6/</loc>
+  <lastmod>2024-02-21T14:19:19+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+
+
+</urlset>
