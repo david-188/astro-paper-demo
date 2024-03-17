@@ -74,17 +74,21 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     <style>
         /* 设置视频容器的样式 */
         #video-container {
-            width: 300px; /* 视频容器的宽度 */
-            height: 300px; /* 视频容器的高度 */
-            position: relative; /* 设置相对定位，方便调整位置 */
-            top: 0px; /* 距离顶部50像素 */
-            left: 100px; /* 距离左侧100像素 */
+            display: flex; /* 使用 Flexbox 布局 */
+            flex-wrap: wrap; /* 允许元素换行 */
+            justify-content: space-between; /* 水平间距相等 */
+            gap: 20px; /* 设置视频元素之间的水平间距 */
         }
 
         /* 设置视频元素的样式 */
+        .video-item {
+            width: calc(33.33% - 20px); /* 每行显示3个视频，减去间距 */
+            margin-bottom: 20px; /* 设置视频元素之间的垂直间距 */
+        }
+
         video {
-            width: 100%; /* 视频元素占满视频容器的宽度 */
-            height: 100%; /* 视频元素占满视频容器的高度 */
+            width: 100%; /* 视频元素占满父容器的宽度 */
+            height: auto; /* 高度自动适应比例 */
         }
     </style>
 </head>
@@ -92,10 +96,31 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     <h2>OpenAI官网视频</h2>
     <!-- 使用一个容器包裹视频元素 -->
     <div id="video-container">
-        <video controls>
-            <source src="https://cdn.openai.com/tmp/s/sampling_4.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <!-- 第一个视频元素 -->
+        <div class="video-item">
+            <video controls>
+                <source src="https://cdn.openai.com/tmp/s/sampling_1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- 第二个视频元素 -->
+        <div class="video-item">
+            <video controls>
+                <source src="https://cdn.openai.com/tmp/s/sampling_2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- 第三个视频元素 -->
+        <div class="video-item">
+            <video controls>
+                <source src="https://cdn.openai.com/tmp/s/sampling_4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- 更多视频元素... -->
     </div>
 </body>
 </html>
