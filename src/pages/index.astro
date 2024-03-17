@@ -71,15 +71,34 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>嵌入视频</title>
+    <style>
+        /* 设置视频容器的样式 */
+        #video-container {
+            width: 640px; /* 视频容器的宽度 */
+            height: 360px; /* 视频容器的高度 */
+            margin: 0 auto; /* 水平居中 */
+            position: relative; /* 设置相对定位，方便调整位置 */
+        }
+
+        /* 设置视频元素的样式 */
+        video {
+            width: 100%; /* 视频元素占满视频容器的宽度 */
+            height: 100%; /* 视频元素占满视频容器的高度 */
+        }
+    </style>
 </head>
 <body>
     <h2>OpenAI官网视频</h2>
-    <video controls width="300" height="300">
-        <source src="https://cdn.openai.com/tmp/s/sampling_4.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <!-- 使用一个容器包裹视频元素 -->
+    <div id="video-container">
+        <video controls>
+            <source src="https://cdn.openai.com/tmp/s/sampling_4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 </body>
 </html>
+
 
       <p>
         Read the blog posts or check
