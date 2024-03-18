@@ -84,12 +84,15 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         .video-item {
             width: calc((100% - 40px) / 3); /* 每行显示3个视频，减去间距 */
             margin-bottom: 20px; /* 设置视频元素之间的垂直间距 */
-            height: 50px; /* 视频容器的高度 */
+          
         }
 
         video {
             width: 100%; /* 视频元素占满父容器的宽度 */
             height: auto; /* 高度自动适应比例 */
+            max-width: 100%; /* 设置视频最大宽度 */
+            max-height: 200px; /* 设置视频最大高度 */
+
         }
     </style>
 </head>
