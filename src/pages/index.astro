@@ -95,11 +95,10 @@ const socialCount = SOCIALS.filter(social => social.active).length;
             height: 300px; /* 视频元素占满父容器的高度 */
             object-fit: cover; /* 确保视频铺满整个视频框 */
         }
- h2 {
-    position: absolute; /* 设置标题为绝对定位 */
-    left: 0; /* 将标题的左侧与视频容器的左侧对齐 */
-    margin-top: 0; /* 可以调整标题的垂直位置 */
-  }
+h2 {
+  position: relative; /* 设置标题为相对定位 */
+  left: 100px; /* 设置标题的左边距为视频容器的左边距的负值 */
+}
     </style>
 </head>
 <body>
