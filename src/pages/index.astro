@@ -97,7 +97,8 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         }
 h2 {
   position: relative; /* 设置标题为相对定位 */
-  left: 80px; /* 设置标题的左边距为视频容器的左边距的负值 */
+  left: 0; /* 将标题的左边距设置为 0，与视频容器的左边对齐 */
+  width: calc((100% - 40px) / 3); /* 让标题宽度与视频容器一致 */
 }
 
     </style>
