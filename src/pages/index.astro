@@ -96,11 +96,10 @@ const socialCount = SOCIALS.filter(social => social.active).length;
             object-fit: cover; /* 确保视频铺满整个视频框 */
         }
 h2 {
-  position: relative; /* 设置标题为相对定位 */
-  left: 0; /* 将标题的左边距设置为 0，与视频容器的左边对齐 */
-  width: calc((100% - 40px) / 3); /* 让标题宽度与视频容器一致 */
+  display: inline-block; /* 将标题设置为内联块元素 */
+  margin-right: 20px; /* 设置标题与视频列之间的右边距，保持与视频列的间距一致 */
+  vertical-align: top; /* 设置标题与视频列的垂直对齐方式为顶部对齐 */
 }
-
     </style>
 </head>
 <body>
