@@ -8,8 +8,8 @@ featured: true
 draft: false
 tags:
   - sora
-  -  sora ai    
-  -  TEXT TO video
+  - sora_ai    
+  - TEXT_TO_video
 description:
  Sora is a text-to-video tool released by OpenAI on February 15, 2024. It is an AI video model designed specifically for generating videos.
 ---
