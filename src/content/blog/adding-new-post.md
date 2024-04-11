@@ -3,11 +3,13 @@ author: Sat Naing
 pubDatetime: 2022-09-23T15:22:00Z
 modDatetime: 2023-12-21T09:12:47.400Z
 title: What is Sora?
-slug: Sora is a text-to-video tool 
+slug: sora-text-to-video
 featured: true
 draft: false
 tags:
-  - sora    - sora ai    - TEXT TO video
+  - sora
+  -  sora ai    -
+  -  TEXT TO video
 description:
  Sora is a text-to-video tool released by OpenAI on February 15, 2024. It is an AI video model designed specifically for generating videos.
 
