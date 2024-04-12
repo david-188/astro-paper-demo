@@ -6,7 +6,7 @@ slug:  Introduction-to-Sora
 featured: true
 ogImage: ../../assets/images/AstroPaper-v4.png
 tags:
-  - release
+  - sora
 description: Introduction to Sora
 ---
 
