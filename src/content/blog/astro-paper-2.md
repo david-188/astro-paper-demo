@@ -2,14 +2,14 @@
 author: Sat Naing
 pubDatetime: 2023-01-30T15:57:52.737Z
 title: What makes Sora so remarkable?
-slug: What makes Sora so remarkable?
+slug: What-makes-Sora-so-remarkable?
 featured: false
 ogImage: https://user-images.githubusercontent.com/53733092/215771435-25408246-2309-4f8b-a781-1f3d93bdf0ec.png
 tags:
   - sora
   - sora ai
   - text_to_video
-description:Sora not only accurately portrays details but also comprehends the existence of objects in the real world, generating corresponding characters and information.
+description: Sora not only accurately portrays details but also comprehends the existence of objects in the real world, generating corresponding characters and information.
 ---
 It has the ability to generate high-definition videos lasting up to 1 minute based on textual commands input by users. These videos can encompass complex scenarios involving multiple characters, specific types of movements, precise thematic and background details, and more.
 
