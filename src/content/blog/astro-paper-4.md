@@ -2,12 +2,12 @@
 author: Sat Naing
 pubDatetime: 2024-01-04T09:30:41.816Z
 title: Introduction to Sora
-slug:  Introduction-to-Sora
+slug:  "Introduction-to-Sora"
 featured: true
 ogImage: ../../assets/images/AstroPaper-v4.png
 tags:
   - sora
-description: Introduction to Sora
+description: "Introduction to Sora"
 ---
 
 Introduction to Sora
