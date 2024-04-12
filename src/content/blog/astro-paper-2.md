@@ -11,6 +11,7 @@ tags:
   - text_to_video
 description: Sora not only accurately portrays details but also comprehends the existence of objects in the real world, generating corresponding characters and information.
 ---
+
 It has the ability to generate high-definition videos lasting up to 1 minute based on textual commands input by users. These videos can encompass complex scenarios involving multiple characters, specific types of movements, precise thematic and background details, and more.
 
 Sora not only accurately portrays details but also comprehends the existence of objects in the real world, generating corresponding characters and information.
