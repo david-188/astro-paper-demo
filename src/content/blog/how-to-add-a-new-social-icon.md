@@ -2,124 +2,25 @@
 author: Simon Smale
 pubDatetime: 2024-01-08T18:16:00.000Z
 modDatetime:
-title: How to add a new Social Icon to AstroPaper
+title: Sora's Six Major Advantages
 featured: false
 draft: false
 tags:
-  - FAQ
-description: How to add a new social icon to AstroPaper
+  - sora
+  - sora ai
+description: Sora's Six Major Advantages
 ---
 
-Hot new platform? Niche corner of the internet? Or one specific to your area? This post will guide you through how to add a new social icon to the theme.
+The "Daily Economic News" reporter summarized the six major advantages of Sora from the report:
 
-## Table of contents
+(1) Accuracy and Diversity: Sora can transform short text descriptions into high-definition videos lasting up to one minute. It accurately interprets user-provided text inputs and generates high-quality video clips with various scenes and characters. It covers a wide range of topics, from people and animals to lush landscapes, urban scenes, gardens, and even underwater views of New York City, providing diverse content according to user requirements. According to Medium, Sora can accurately interpret long prompts of up to 135 words.
 
-## Merging back to the theme
+(2) Powerful Language Understanding: OpenAI utilizes the recaptioning technology of the DALL·E model to generate descriptive subtitles for visual training data, improving both the accuracy of the text and the overall quality of the video. Additionally, similar to DALL·E 3, OpenAI also utilizes GPT technology to transform short user prompts into longer, detailed transcriptions, which are then sent to the video model. This enables Sora to accurately generate high-quality videos according to user prompts.
 
-The maintainer of the theme [Sat Naing](https://github.com/satnaing) has said that he intends to only
+(3) Video Generation from Images/Videos: In addition to converting text into videos, Sora can also accept other types of input prompts, such as existing images or videos. This allows Sora to perform a wide range of image and video editing tasks, such as creating perfect loop videos, converting static images into animations, or extending videos forwards or backwards. OpenAI demonstrated demo videos of image generation based on DALL·E 2 and DALL·E 3 in the report. This not only demonstrates the powerful capabilities of Sora but also showcases its unlimited potential in the field of image and video editing.
 
-> keep the project supporting only a specific set of popular social icons.
+(4) Video Extension Functionality: Due to its ability to accept diverse input prompts, users can create videos based on images or supplement existing videos. As a Transformer-based diffusion model, Sora can also extend videos forwards or backwards along the timeline.
 
-So there is a chance that your icon will not be in the repo, but fear not, it is very easy to add your own!
+(5) Excellent Device Adaptability: Sora has excellent sampling capabilities, capable of handling any video size between widescreen 1920x1080p and portrait 1080x1920 effortlessly. This means Sora can generate content perfectly matched to the original aspect ratio of various devices. Additionally, before generating high-resolution content, Sora can quickly create content prototypes in smaller sizes.
 
-## Getting things to match
-
-The icon set used by the theme come from [Tabler](https://tabler.io/icons) and there are a quite a few brands on there.
-
-## Adding your icon, by example
-
-For this guide we are going to use the StackOverflow icon as our example.
-
-### Find the icon
-
-> In this case, we are going to use the `StackOverflow` as an example.
-
-Searching on Tabler for 'StackOverflow' we get a single icon <https://tabler.io/icons/icon/brand-stackoverflow>, we are going to need the svg code, so save it for later.
-
-```html
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  class="icon icon-tabler icon-tabler-brand-stackoverflow"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  stroke-width="2"
-  stroke="currentColor"
-  fill="none"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M4 17v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-1" />
-  <path d="M8 16h8" />
-  <path d="M8.322 12.582l7.956 .836" />
-  <path d="M8.787 9.168l7.826 1.664" />
-  <path d="M10.096 5.764l7.608 2.472" />
-</svg>
-```
-
-### Clean up
-
-We need to do some tidy up on what the theme provides us.
-
-1. remove all classes other than `icon-tabler`
-2. remove width & height
-3. remove the viewBox
-4. remove the stroke-width
-5. remove the stroke
-6. remove the fill
-
-This should leave you with the following
-
-```html
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  class="icon-tabler
-  stroke-linecap="round" stroke-linejoin="round"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M4 17v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-1" />
-  <path d="M8 16h8" />
-  <path d="M8.322 12.582l7.956 .836" />
-  <path d="M8.787 9.168l7.826 1.664" />
-  <path d="M10.096 5.764l7.608 2.472" />
-</svg>
-```
-
-Now we can add the clean svg code to the `src/assets/socialIcons.ts` file in `SocialIcons`.
-
-```typescript
-const socialIcons = {
-  /* others */
-  StackOverflow: `<svg
-       xmlns="http://www.w3.org/2000/svg"
-       class="icon-tabler
-       stroke-linecap="round" stroke-linejoin="round"
-     >
-       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-       <path d="M4 17v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-1" />
-       <path d="M8 16h8" />
-       <path d="M8.322 12.582l7.956 .836" />
-       <path d="M8.787 9.168l7.826 1.664" />
-       <path d="M10.096 5.764l7.608 2.472" />
-     </svg>`,
-};
-```
-
-Finally we can configure it for our blog in `src/config.ts` under `SOCIALS`. Setting `active: true` to add it to the site.
-
-```typescript
-export const SOCIALS: SocialObjects = [
-  /* others */
-  {
-    name: "StackOverflow",
-    href: "https://stackoverflow.com/search?q=astropaper",
-    linkTitle: `See what questions there are about ${SITE.title} on StackOverflow`,
-    active: true,
-  },
-];
-```
-
-> Ensure that `href` and `linkTitle` are updated for the corresponding link and label.
-
-Full code for the above steps can be found in [this pull request](https://github.com/satnaing/astro-paper/pull/216/files)
+(6) Consistency and Continuity of Scenes and Objects: Sora can generate videos with dynamic changes in perspective, making the movement of characters and scene elements in three-dimensional space appear more natural. Sora handles occlusion well. One issue with existing models is that when objects leave the field of view, they may lose track of them. However, by providing multi-frame predictions at once, Sora ensures that the main subject remains unchanged even when temporarily out of view.
