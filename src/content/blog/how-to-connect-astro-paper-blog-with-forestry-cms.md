@@ -1,8 +1,8 @@
 ---
-title: How to connect AstroPaper blog with Forestry CMS
+title: Non-technical Insights into Sora
 author: Sat Naing
 pubDatetime: 2022-09-21T05:17:19Z
-slug: how-to-connect-astro-paper-blog-with-forestry-cms
+slug: non-technical-insights-sora-impact-societal-development
 featured: false
 draft: false
 tags:
@@ -11,116 +11,21 @@ tags:
   - astro-paper
 ogImage: https://res.cloudinary.com/noezectz/v1663745737/astro-paper/astropaper-x-forestry-og_kqfwp0.png
 description:
-  Step by step process of connecting Astro-Paper blog theme with Forestry
-  Headless CMS.
+  Explore the non-technical aspects of Sora, OpenAI's groundbreaking text-to-video tool, and its potential impact on various industries and societal development. Delve into Sora's unique characteristics, its implications for sectors like film, advertising, and education, and the challenges posed by AI's rapid advancement. Join the discussion on AI's future and our readiness for its transformative effects.
 ---
 
-> Important!!! Forestry is going to be discontinued on April 22nd, 2023. You can [read their announcement](https://forestry.io/blog/forestry.io-end-of-life/) for more info.
+In January 2024, OpenAI released Sora, a text-to-video tool, which amazed the tech world with its stunning video quality. Dubbed by a prominent tech figure as "once unbelievable, now seemingly unreal," Sora's introduction sparked widespread discussion. What is Sora? How does it differ from previous AI tools? What impact does it have on societal development? These questions have ignited public debate. (This article is not AI-generated; this disclaimer is hereby made.)
 
-In this article, I will explain step by step process of connecting AstroPaper theme with the Forestry headless CMS. So, let's get started 🎉
+What is Sora? What are its characteristics?
+In recent years, the development in AI and large-scale models has been rapid and continuous. From speech-to-text conversion to interactive text tools like ChatGPT3 and ChatGPT4, to AI image generation tools like Midjourney, and now to Sora, a text-to-video tool. What sets Sora apart is not just its ability to generate videos from text but also the way it is trained through a programmatic approach. Previously, creating a 3D video required meticulous modeling and rendering, with each frame meticulously crafted. Additionally, what's remarkable about Sora is its adherence to real-world physics in generating virtual videos. Many tech enthusiasts believe that Sora is building a "world model," striving to virtualize and replicate the real world. The name "Sora" means "endless" in Japanese, prompting reflection on why OpenAI chose this name.
 
-## Table of contents
+How will Sora's emergence impact current industries?
+Currently, the impact on all image-related industries is quite apparent. Adobe's stock price fell by 7.41% following Sora's release. Some analysts predict significant disruption in several sectors. Firstly, the film and television industry, where AI could potentially handle everything from set design to animation. Secondly, the advertising industry, where AI-generated content could revolutionize campaign creation. Thirdly, the short video industry, where Sora's ability to generate 60-second videos with a single command could challenge content creators. Fourthly, higher education, where traditional programs like film production may face obsolescence with AI advancements.
 
-## What is Forestry?
+Are we prepared for AI's development?
+The concept and algorithm behind Sora were initially proposed by Google but faced challenges in implementation. Innovation in AI development is constrained by factors like capital and ecosystem. China's AI development faces challenges such as model creation, computing power, data quality, and investor patience. As AI becomes a driving force in society, it will absorb significant resources, akin to the industrial revolution. The emergence of AI may disrupt existing social structures and management systems, leading to new challenges and opportunities. As AI algorithms improve and data grows exponentially, societal impacts will continue to evolve. Planning ahead for AI ethics, compliance, and legal frameworks is imperative.
 
-[Forestry](https://forestry.io/ "Forestry Website") is a git-based headless CMS and we can manage our markdown contents easily by using that. Although it is not an open-sourced CMS, it has a good free plan by which we can import up to 3 sites (3 repositories). In this article, I'll demonstrate how we can use Forestry as git-based CMS of our AstroPaper blog theme.
 
-## Login / Register an account at Forestry.io
 
-First of all, you have to create an account at [Forestry website](https://app.forestry.io/login "Forestry Login Page"). I usually sign up with my Github account.
 
-![Forestry Login page](https://res.cloudinary.com/noezectz/v1663739096/astro-paper/Forestry-io_hk5yzv.png)
 
-## Import AstroPaper site (repository)
-
-This part is importing the repository to Forestry and a little bit of set up process.
-
-### Add Site
-
-After logging in/signing up an account, import your AstroPaper site by clicking "Add Site" button.
-
-![Forestry 'My sites' page](https://res.cloudinary.com/noezectz/v1663739752/astro-paper/Forestry-io_1_z1bdyd.png)
-
-### Select SSG
-
-In this case, just choose "Others"
-
-![Selecting 'Others' as a site generator](https://res.cloudinary.com/noezectz/v1663740872/astro-paper/Forestry-io_2_blrrw2.png)
-
-### Select Git Provider
-
-My git provider is Github and I assume yours is the same. So, choose "Github".
-
-![Selecting Github as a git provider](https://res.cloudinary.com/noezectz/v1663740922/astro-paper/Forestry-io_3_pj1v8v.png)
-
-After this, the process of importing site (repo) is done.
-
-## Set up Sidebar
-
-The next phase after importing site is setting up sidebar menu. You can add many sidebar menu as you want. However, I'll only add one sidebar menu in this case.
-
-Navigate to "Finish setup process" > "Set up sidebar" and click "Configure sitebar"
-
-![Forestry welcome screen](https://res.cloudinary.com/noezectz/v1663740974/astro-paper/forestry-io_4_j35uk9.png)
-
-Then, click "Add Section" button.
-
-![Clicking 'Add Section' for sidebar](https://res.cloudinary.com/noezectz/v1663741011/astro-paper/forestry-io_5_sxtgvx.png)
-
-After that, choose DIRECTORY for the Section Type.
-
-![Choosing 'DIRECTORY' as the Selection Type](https://res.cloudinary.com/noezectz/v1663741052/astro-paper/forestry-io_6_lddmkx.png)
-
-Then, configure the directory section. You can follow along with my setup.
-
-![Configuring the Directory Section](https://res.cloudinary.com/noezectz/v1663741105/astro-paper/forestry-io_7_jkwgi1.png)
-
-After this step, you should see a sidebar menu "Blog Posts" and some blog posts.
-
-## Set up Media Import
-
-In Forestry CMS, you can set up different options for media (aka assets) such as Cloudinary, git commit media etc. I usually store my assets in [Cloudinary](https://cloudinary.com/). To set up media import, go to Settings > Media. Then select your image storage provider. (I chose Cloudinary).
-
-![Setting up 'Cloudinary' as the media import](https://res.cloudinary.com/noezectz/v1663741636/astro-paper/forestry-io-media-import_1_f8i4lm.png)
-
-You can see details of Forestry Cloudinary setup at [Forestry documentation](https://forestry.io/docs/media/cloudinary/).
-
-## Set up Front matter template
-
-After setting everything up, you can set up front matter template for your future blog post. To set up front matter template, navigate to "Front matter" menu on the sidebar.
-
-Then, click "Add Template" button at the top right corner.
-
-![Front Matter Templates page](https://res.cloudinary.com/noezectz/v1663742060/astro-paper/forestry-io-frontmatter_yskfvn.png)
-
-Select new template based on existing document.
-
-![Creating new template based on existing document](https://res.cloudinary.com/noezectz/v1663742179/astro-paper/forestry-io-existing-doc_bwcb9q.png)
-
-Then, add template name and choose one of my document page as template.
-
-As the final setup, make some adjustment in the front matter field settings.
-
-![Making some adjustment in a front matter field setting](https://res.cloudinary.com/noezectz/v1663742450/astro-paper/forestry-io-fm-config_jqmgwz.png)
-
-Here are some adjustments you have to make.
-
-**_title_**
-
-- Validation => REQUIRED => true
-
-**_author_**
-
-- Default => your name
-
-**_datetime_**
-
-- Default => USE "NOW" AS DEFAULT
-
-**_description_**
-
-- Validation => REQUIRED => true
-
-## Conclusion
-
-You can now post your articles and write whatever you want.

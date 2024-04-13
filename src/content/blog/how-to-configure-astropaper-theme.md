@@ -2,159 +2,59 @@
 author: Sat Naing
 pubDatetime: 2022-09-23T04:58:53Z
 modDatetime: 2024-01-15T13:05:56.066Z
-title: How to configure AstroPaper theme
-slug: how-to-configure-astropaper-theme
+title: "Sora Unveiled: How Far Are We from It?"
+slug: sora-ai-text-to-video-generation-impact-future-artificial-intelligence
 featured: true
 draft: false
 tags:
   - configuration
   - docs
-description: How you can make AstroPaper theme absolutely yours.
+description: Sora, the latest AI model by OpenAI, revolutionizes text-to-video generation. Explore its impact on various industries and the future of artificial intelligence
 ---
 
-AstroPaper is a highly customizable Astro blog theme. With AstroPaper, you can customize everything according to your personal taste. This article will explain how you can make some customizations easily in the config file.
+Artificial intelligence company OpenAI announced the launch of Sora, a large model for text-to-video generation.
 
-## Table of contents
+In the early hours of February 16th, Beijing time, OpenAI, a leader in global artificial intelligence models and a pioneer of the AI era, introduced a model capable of instantly generating short videos based on text commands, naming it Sora. The emergence of Sora has left the tech world amazed. Compared to previous generative AI-produced animation content, Sora showcases a whole new level of visual imagery that is jaw-dropping. The showcased visuals, including lighting effects and details, have left people in awe, earning Sora the title of the "AI version of the magic brush of Ma Liang."
 
-## Configuring SITE
+While Sora's capabilities mark a significant advancement, it may not be as straightforward as initially imagined. Several industry experts told Southern Plus reporters that the current version of Sora is still evolving, thus exhibiting some "unreliable" aspects. However, there is no doubt that AI's pace will continue to accelerate.
 
-The important configurations lies in `src/config.ts` file. Within that file, you'll see the `SITE` object where you can specify your website's main configurations.
+From Text to Image
 
-During deveopment, it's okay to leave `SITE.website` empty. But in production mode, you should specify your deployed url in `SITE.website` option since this will be used for canonical URL, social card URL etc.. which are important for SEO.
+"AI's a significant step, but not a breakthrough yet."
 
-```js
-// file: src/config.ts
-export const SITE = {
-  website: "https://astro-paper.pages.dev/",
-  author: "Sat Naing",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "AstroPaper",
-  ogImage: "astropaper-og.jpg",
-  lightAndDarkMode: true,
-  postPerPage: 3,
-  scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
-};
-```
+Hu Guoqing, the head of the 5G project group at the Beijing-Shenzhen Research Institute and director of the Guangdong Provincial Frontier Technology Research Institute, believes that based on the current samples officially released by Sora, its ability to directly generate images from text commands can indeed achieve a realistic effect to some extent. This represents a significant advancement for artists, filmmakers, and others involved in video production. Moreover, compared to previous AI products, this is undoubtedly a huge leap forward.
 
-Here are SITE configuration options
+However, the ability to generate a 60-second short video from text is already achievable by other models, although they might be limited to just a few seconds.
 
-| Options               | Description                                                                                                                                                                                                                                         |
-| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `website`             | Your deployed website url                                                                                                                                                                                                                           |
-| `author`              | Your name                                                                                                                                                                                                                                           |
-| `desc`                | Your site description. Useful for SEO and social media sharing.                                                                                                                                                                                     |
-| `title`               | Your site name                                                                                                                                                                                                                                      |
-| `ogImage`             | Your default OG image for the site. Useful for social media sharing. OG images can be an external image url or they can be placed under `/public` directory.                                                                                        |
-| `lightAndDarkMode`    | Enable or disable `light & dark mode` for the website. If disabled, primary color scheme will be used. This option is enabled by default.                                                                                                           |
-| `postPerPage`         | You can specify how many posts will be displayed in each posts page. (eg: if you set SITE.postPerPage to 3, each page will only show 3 posts per page)                                                                                              |
-| `scheduledPostMargin` | In Production mode, posts with a future `pubDatetime` will not be visible. However, if a post's `pubDatetime` is within the next 15 minutes, it will be visible. You can set `scheduledPostMargin` if you don't like the default 15 minutes margin. |
+"It's premature to call this a breakthrough. According to the videos released by OpenAI, AI's technique of generating images frame by frame from text commands and then concatenating them to form a video provides a good idea for other models to train from text to images."
 
-## Configuring locale
+At the same time, some of Sora's "weaknesses" have been disclosed by the official sources. Yao Jun, a specialist engineer at Tencent's Machine Learning Platform department, explained that because its model does not rely on an internal physical simulation engine, the generated videos often appear "unreliable," showing inconsistencies with the laws of real-world physics. This is a problem inherent in the current technical approach driven by large-scale data-driven models.
 
-You can configure the default locale used for the build (e.g., date format in the post page), and for the rendering in browsers (e.g., date format in the search page)
+Yao believes that the current application scenarios for this application are still relatively limited. "From a theoretical perspective, these models do not have a world model, a real knowledge framework core. They only rely on the 'law of large numbers' reflected in the data, which overlaps with the real world to some extent but falls far short of the threshold of a 'world model.'"
 
-```js
-// file: src/config.ts
-export const LOCALE = {
-  lang: "en", // html lang code. Set this empty and default will be "en"
-  langTag: ["en-EN"], // BCP 47 Language Tags. Set this empty [] to use the environment default
-} as const;
-```
+AGI Implementation May Be Shortened to a Year?
 
-`LOCALE.lang` will be used as HTML ISO Language code in `<html lang="en">`. If you don't specify this, default fallback will be set to `en`.
-`LOCALE.langTag` is used as [datetime locale](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString#locales). For this, you can specify an array of locales for fallback languages. Leave `LOCALE.langTag` empty `[]` to use the environment default at _build-_ and _run-time_.
+"Be cautious, but the time may significantly shorten."
 
-## Configuring logo or title
+In response to the discussions surrounding Sora, Zhou Hongyi, the founder of 360, expressed his views on social media, even suggesting that the birth of Sora means that the realization of AGI (Artificial General Intelligence) may be shortened from 10 years to one or two years.
 
-You can specify site's title or logo image in `src/config.ts` file.
+Regarding Sora's biggest advantage, Zhou Hongyi stated that previous text-to-video software only operated on 2D planes to manipulate graphic elements, viewing videos as combinations of multiple real images and lacking a true understanding of the world. But in the videos produced by Sora, it can understand, like humans, that tanks have tremendous impact force and can destroy cars, without showing situations like cars destroying tanks. "Once artificial intelligence is connected to a camera, watching all the movies, watching all the videos on YouTube and TikTok, the understanding of the world will far exceed that of textual learning. A picture is worth a thousand words, and the information conveyed by videos far exceeds that of a picture, so AGI is not far away. It's not a matter of 10 or 20 years, it may be achieved quickly in one or two years."
 
-![An arrow pointing at the website logo](https://res.cloudinary.com/noezectz/v1663911318/astro-paper/AstroPaper-logo-config_goff5l.png)
+However, industry experts told Southern Plus reporters that while they believe that the pace of AI development will accelerate, whether AGI can be achieved within a year still needs to be viewed cautiously. Hu Guoqing said that although OpenAI's president did mention focusing on AGI development in 2024, whether it can be achieved in a year remains unknown. "After the release of Sora, I believe that companies like Google will quickly follow suit. It is expected that various companies will launch similar beta versions this year. The more competition among companies, the faster the maturity of this field."
 
-```js
-// file: src/config.ts
-export const LOGO_IMAGE = {
-  enable: false,
-  svg: true,
-  width: 216,
-  height: 46,
-};
-```
+Regarding when the public can use such products on a large scale, Yao Jun told reporters, "It's expected to be soon." Yao said that without seeing serious papers, based solely on feelings, Sora seems to have absorbed a lot of experience from large language models and image-generating models. It has partially solved the constraints of training data and reportedly used video data generated by game engines. Additionally, as rumors suggest, the model's scale is not large, so its achievements are expected to be quickly applied.
 
-If you specify `LOGO_IMAGE.enable` => `false`, AstroPaper will automatically convert `SITE.title` to the main site text logo.
+But one thing is certain: the optimization speed of this model will only get faster and faster. Just like the appearance of text-to-image technology at the time, with an upgrade every quarter, there will be a significant change every year.
 
-If you specify `LOGO_IMAGE.enable` => `true`, AstroPaper will use the logo image as the site's main logo.
+Will the Film and Television Industry Be Impacted by AI?
 
-You have to specify `logo.png` or `logo.svg` under `/public/assets` directory. Currently, only svg and png image file formats are supported. (**_Important!_** _logo name has to be logo.png or logo.svg)_
+Industry insiders: AI generation costs low, but "somewhat fake"
 
-If your logo image is png file format, you have to set `LOGO_IMAGE.svg` => `false`.
+Due to Sora's visual capabilities, people cannot help but wonder if the AI industry will impact the film and television industry. In response, reporters contacted a person in charge of a film and television company in Beijing, who, under the pseudonym Xin Yi, believed that while the image quality and content brought by Sora are stunning, she is not optimistic about its direct involvement in the film and television production process.
 
-It is recommended that you specify width and height of your logo image. You can do that by setting `LOGO_IMAGE.width` _and_ `LOGO_IMAGE.height`
+"Purely from the perspective of image quality, most of the videos presented by Sora are impressive in terms of clarity and visual details. However, compared to mainstream film and television works today, they are still far apart." Xin Yi
 
-## Configuring social links
 
-You can configure your own social links along with its icons.
 
-![An arrow pointing at social link icons](https://res.cloudinary.com/noezectz/v1663914759/astro-paper/astro-paper-socials_tkcjgq.png)
 
-Currently 20 social icons are supported. (Github, LinkedIn, Facebook etc.)
 
-You can specify and enable certain social links in hero section and footer. To do this, go to `/src/config.ts` and then you'll find `SOCIALS` array of object.
-
-```js
-// file: src/config.ts
-export const SOCIALS: SocialObjects = [
-  {
-    name: "Github",
-    href: "https://github.com/satnaing/astro-paper",
-    linkTitle: ` ${SITE.title} on Github`,
-    active: true,
-  },
-  {
-    name: "Facebook",
-    href: "https://github.com/satnaing/astro-paper",
-    linkTitle: `${SITE.title} on Facebook`,
-    active: true,
-  },
-  {
-    name: "Instagram",
-    href: "https://github.com/satnaing/astro-paper",
-    linkTitle: `${SITE.title} on Instagram`,
-    active: true,
-  },
-  ...
-]
-```
-
-You have to set specific social link to `active: true` in order to appear your social links in hero and footer section. Then, you also have to specify your social link in `href` property.
-
-For instance, if I want to make my Github appear, I'll make it like this.
-
-```js
-export const SOCIALS: SocialObjects = [
-  {
-    name: "Github",
-    href: "https://github.com/satnaing", // update account link
-    linkTitle: `${SITE.title} on Github`, // this text will appear on hover and VoiceOver
-    active: true, // makre sure to set active to true
-  }
-  ...
-]
-```
-
-Another thing to note is that you can specify the `linkTitle` in the object. This text will display when hovering on the social icon link. Besides, this will improve accessibility and SEO. AstroPaper provides default link title values; but you can replace them with your own texts.
-
-For example,
-
-```js
-linkTitle: `${SITE.title} on Twitter`,
-```
-
-to
-
-```js
-linkTitle: `Follow ${SITE.title} on Twitter`;
-```
-
-## Conclusion
-
-This is the brief specification of how you can customize this theme. You can customize more if you know some coding. For customizing styles, please read [this article](https://astro-paper.pages.dev/posts/customizing-astropaper-theme-color-schemes/). Thanks for reading.✌🏻
