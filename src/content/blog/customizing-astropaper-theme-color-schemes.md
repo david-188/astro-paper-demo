@@ -1,6 +1,6 @@
 ---
 author: Sat Naing
-pubDatetime: 2022-09-25T15:20:35Z
+pubDatetime: 2024-04-27T15:20:35Z
 title: The Implementation Path of Sora
 featured: false
 draft: false
