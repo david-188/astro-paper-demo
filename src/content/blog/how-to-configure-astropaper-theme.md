@@ -1,14 +1,15 @@
 ---
 author: Sat Naing
 pubDatetime: 2022-09-23T04:58:53Z
-modDatetime: 2024-01-15T13:05:56.066Z
+modDatetime: 2024-04-15T13:05:56.066Z
 title: "Sora Unveiled: How Far Are We from It?"
 slug: sora-ai-text-to-video-generation-impact-future-artificial-intelligence
 featured: true
 draft: false
 tags:
-  - configuration
-  - docs
+  - sora
+  - sora ai
+  - text to video
 description: Sora, the latest AI model by OpenAI, revolutionizes text-to-video generation. Explore its impact on various industries and the future of artificial intelligence
 ---
 
