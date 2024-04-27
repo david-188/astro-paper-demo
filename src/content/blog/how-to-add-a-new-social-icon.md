@@ -1,6 +1,6 @@
 ---
 author: Simon Smale
-pubDatetime: 2024-01-08T18:16:00.000Z
+pubDatetime: 2024-04-26T18:16:00.000Z
 modDatetime:
 title: Sora's Six Major Advantages
 featured: false
@@ -8,6 +8,7 @@ draft: false
 tags:
   - sora
   - sora ai
+  - text to video
 description: Sora's Six Major Advantages
 ---
 
