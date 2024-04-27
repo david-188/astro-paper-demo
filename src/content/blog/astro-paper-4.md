@@ -1,12 +1,14 @@
 ---
 author: Sat Naing
-pubDatetime: 2024-01-04T09:30:41.816Z
+pubDatetime: 2024-04-27T09:30:41.816Z
 title: Introduction to Sora
 slug:  "Introduction-to-Sora"
 featured: true
 ogImage: ../../assets/images/AstroPaper-v4.png
 tags:
   - sora
+  - sora ai
+  - text to video
 description: "Introduction to Sora"
 ---
 
