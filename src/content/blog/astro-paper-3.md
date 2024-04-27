@@ -1,13 +1,15 @@
 ---
 author: Sat Naing
-pubDatetime: 2023-09-25T10:25:54.547Z
+pubDatetime: 2024-04-27T10:25:54.547Z
 title: How to Learn and Use Sora
 slug:  How-to-Learn-and-Use-Sora
 featured: false
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
-  - release
-description: "AstroPaper Version 3: Elevating Your Web Experience with Astro v3 and Seamless View Transitions"
+  - sora
+  - sora ai
+  - text to video
+description: "How to Learn and Use Sora"
 ---
 
 These days, with Sora's popularity on the rise, courses and tutorials related to it have also gained traction. However, here, I want to offer a few words of advice:
