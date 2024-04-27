@@ -1,114 +1,127 @@
 ---
-title: How to update dependencies of AstroPaper
+title: Sora's debut, and the starting gun of the AI ​​competition
 author: Sat Naing
-pubDatetime: 2023-07-20T15:33:05.569Z
+pubDatetime: 2024-04-20T15:33:05.569Z
 slug: how-to-update-dependencies
 featured: false
 draft: false
 ogImage: /assets/forrest-gump-quote.webp
 tags:
-  - FAQ
-description: How to update project dependencies and AstroPaper template.
+  - sora
+  - sora ai
+  - text to video
+description: Sora's debut, and the starting gun of the AI ​​competition.
 ---
 
-Updating the dependencies of a project can be tedious. However, neglecting to update project dependencies is not a good idea either 😬. In this post, I will share how I usually update my projects, focusing on AstroPaper as an example. Nonetheless, these steps can be applied to other js/node projects as well.
+Sora's sudden appearance made people feel the imminent arrival of artificial intelligence. In this competition, there ignited infinite love and hate between Google, Meta, OpenAI, Microsoft, and investors. Where does China stand in this competition?
 
-![Forrest Gump Fake Quote](/assets/forrest-gump-quote.webp)
+A woman dressed in a fashionable black leather jacket, with a bright red dress underneath, wearing black sunglasses and carrying a black chain bag, walked on the streets of Tokyo on a rainy night. The puddles on the ground reflected her figure and the dazzling neon lights. A short 60-second video exploded on social media, not because of the popularity of a fashion blogger, but because of the "shock" brought by AI once again.
 
-## Table of contents
+Sora's sudden appearance made people feel the imminent arrival of artificial intelligence. In this competition, there ignited infinite love and hate between Google, Meta, OpenAI, Microsoft, and investors. Where does China stand in this competition?
 
-## Updating Package Dependencies
+01
+Open Source or Closed Source
 
-There are several ways to update dependencies, and I've tried various methods to find the easiest path. One way to do it is by manually updating each package using `npm install package-name@latest`. This method is the most straightforward way of updating. However, it may not be the most efficient option.
+From the trend, future artificial intelligence may form two systems: open source and closed source. LLaMA follows the open-source model of Android, while OpenAI follows the iOS model of Apple.
 
-My recommended way of updating dependencies is by using the [npm-check-updates package](https://www.npmjs.com/package/npm-check-updates). There's a good [article](https://www.freecodecamp.org/news/how-to-update-npm-dependencies/) from freeCodeCamp about that, so I won't be explaining the details of what it is and how to use that package. Instead, I'll show you my typical approach.
+Just as Sora once again pushed OpenAI into the limelight, Tesla's founder Elon Musk filed a lawsuit against OpenAI supported by Microsoft and its CEO Sam Altman on March 1.
 
-First, install `npm-check-updates` package globally.
+In the lawsuit filed with the San Francisco court, Musk's lawyer stated that in 2015, Altman and OpenAI co-founder Greg Brockman contacted the tech billionaire, agreeing to establish a nonprofit laboratory to develop general artificial intelligence for the "benefit of humanity." In 2018, Musk resigned from the board of OpenAI. In 2020, Musk stated that artificial intelligence "may be more dangerous than nuclear weapons."
 
-```bash
-npm install -g npm-check-updates
-```
+The lawsuit stated: "To this day, the website of OpenAI, Inc., continues to claim that its charter is to ensure that AGI (general artificial intelligence) benefits all of humanity. However, in reality, OpenAI, Inc. has turned into a closed-source subsidiary of Microsoft, the largest tech company in the world."
 
-Before making any updates, it’s a good idea to check all new dependencies that can be updated.
+In the dispute between Musk and OpenAI, setting aside values, a key issue is OpenAI's choice between open source and closed source. Open source has always been the belief of the IT industry. But in the current stage of competition in artificial intelligence, open source and closed source are related to the competitive position of enterprises.
 
-```bash
-ncu
-```
+Startup Stability AI gained fame with the open-source AI large model Stable Diffusion. Stable Diffusion (hereinafter referred to as SD) can create image works based on user text prompts. Stability AI believes that the open-source spirit provides a clear path for creating and accessing cutting-edge research. The research community it supports is currently developing breakthrough artificial intelligence models for applications in images, language, code, audio, video, 3D content, design, biotechnology, and other scientific research. Open-source models have attracted tech giants such as Google, Amazon, and Adobe, who believe that compared to non-open-source AI models, open source is a better choice.
 
-Most of the time, patch dependencies can be updated without affecting the project at all. So, I usually update patch dependencies by running either `ncu -i --target patch` or `ncu -u --target patch`. The difference is that `ncu -u --target patch` will update all the patches, while `ncu -i --target patch` will give an option to toggle which package to update. It’s up to you to decide which approach to take.
+In November 2022, Stability AI released SD 2.0. Just a month after the release of the new version, four of the top ten ranked applications in the Apple App Store were supported by SD. However, Stability AI did not profit from open source; instead, Midjourney, which had productization capabilities, achieved great success. Midjourney, initially with only 11 employees, trained a large amount of high-quality data based on the SD model, fine-tuned the model, and profited from a subscription model, with three packages priced at $10/30/60 per month. With the increase in user data, Midjourney formed a data flywheel, continuously improving user experience. Without accepting any investment, it is estimated that the company's revenue exceeded $200 million in 2023. In September 2022, the artwork "Space Opera" generated by Midjourney won the first prize in the "Digital Art/Digital Manipulated Photo" category at the Colorado State Fair Art Competition. As for Stability AI, which provides large models, it announced in December 2023 that it would no longer be completely open source and instead introduced its latest artificial intelligence models to enterprise users on a monthly subscription basis.
 
-The next part involves updating minor dependencies. Minor package updates usually won't break the project, but it is always good to check the release notes of the respective packages. These minor updates often include some cool features that can be applied to our projects.
+Established in 2018, Runway uses computer graphics and machine learning to lower the barriers to content creation. Gen-2 launched by Runway is a video generation tool for creating text-based videos automatically. Runway was originally one of the creators of the open-source model SD. Before the release of SD, scholars from Germany and Runway jointly released an open-source image generator called Latent Diffusion. The achievements of Stability AI are actually based on Latent Diffusion. Runway later changed its strategy. Transitioning from open source to closed source, it provided support to clients from the film and television industry and participated in special effects projects for films such as "Black Widow," forming its own profit system.
 
-```bash
-ncu -i --target minor
-```
+Google, the leader in the field of artificial intelligence, first introduced the Transformer architecture in 2017. Today, models such as Bert, T5, ChatGPT, LLaMa, and Sora are all based on this architecture. Transformer improved the ability of deep learning to process long text sequences, laying the foundation for the development of large-scale language models. The developers of OpenAI began their exploration based on the paper published by Google.
 
-Last but not least, there might be some major package updates in the dependencies. So, check the rest of the dependency updates by running
+In June 2022, a memo written by Google senior engineer Luke Sernau was leaked, loudly proclaiming that open-source software was threatening large tech companies' control over artificial intelligence. Alternatives to Google's Bard or OpenAI's ChatGPT were allowing developers to research, build, and modify versions that were smaller, cheaper, and (almost) as good as the best artificial intelligence models developed by big companies, and these new versions could be shared for free. However, in February 2024, Google unusually changed its previously adhered-to strategy of keeping large models closed source and launched "open source" large model Gemma. Some reports believe that Gemma represents a shift in Google's large model strategy—emphasizing both open source and closed source, with open source focusing on the most powerful small-scale models, competing with Meta and Mistral AI, which is known as the "hope of all France." Closed source focuses on large-scale models with the best performance, such as OpenAI.
 
-```bash
-ncu -i
-```
+Returning to OpenAI's path choice. Musk's initial investment in OpenAI was to curb the potential danger of general artificial intelligence to humanity, especially when Google acquired the DeepMind team and led the AGI competition all the way. Altman also had the same concerns.
 
-If there are any major updates (or some updates you still have to make), the above command will output those remaining packages. If the package is a major version update, you have to be very careful since this will likely break the whole project. Therefore, please read the respective release note (or) docs very carefully and make changes accordingly.
+OpenAI initially "burned" a lot of money and launched technologies such as Gym and Universe, but they all paled in comparison to Google's AlphaGo. Faced with repeated failures, Musk proposed full management, which was not accepted, so he withdrew from OpenAI, with his total investment being less than $45 million. OpenAI, which lost its source of funding, established a for-profit organization in 2019 to raise funds, setting a profit ceiling, so that anyone investing in this organization could only profit up to 100 times, and profits exceeding 100 times would belong to OpenAI.
 
-If you run `ncu -i` and found no more packages to be updated, _**Congrats!!!**_ you have successfully updated all the dependencies in your project.
+Since 2019, Microsoft has been collaborating with OpenAI. OpenAI trains models on Microsoft's cloud services every year, becoming an important part of Microsoft's investment. GPT-1 was launched
 
-## Updating AstroPaper template
+02
 
-Like other open-source projects, AstroPaper is evolving with bug fixes, feature updates, and so on. So if you’re someone who is using AstroPaper as a template, you might also want to update the template when there’s a new release.
+Why is Google Falling Behind?
 
-The thing is, you might already have updated the template according to your flavor. Therefore, I can’t exactly show **"the one-size-fits-all perfect way"** to update the template to the most recent release. However, here are some tips to update the template without breaking your repo. Keep in mind that, most of the time, updating the package dependencies might be sufficient for you.
+Google's current passive position is not entirely caused by technical issues. The vast scale of its research talent pool makes it more prone to disagreements or conflicts among developers regarding technical pathways and AI ethics, which in turn hinder innovation.
 
-### Files and Directories to keep in mind
+Today, with ChatGPT outperforming Google's BERT and Meta's initiatives preceding Google's in open-sourcing, the pioneer Google finds itself vulnerable both in terms of technology and business strategy. According to Yang Mingchuan, Director of the Big Data and Artificial Intelligence Research Institute at the China Academy of Telecommunications Research, Google's relative sluggishness can be attributed to two main reasons.
 
-In most cases, the files and directories you might not want to override (as you've likely updated those files) are `src/content/blog/`, `src/config.ts`, `src/pages/about.md`, and other assets & styles like `public/` and `src/styles/base.css`.
+Firstly, its lack of focus. The ultimate goal of all large-scale model technologies is general artificial intelligence (AGI). Google should pursue multiple technical pathways concurrently, with the primary one possibly resembling AlphaGo's reinforcement learning. However, this pathway requires the integration of large-scale model technologies. Yang Mingchuan states, "I believe both Google and Meta can potentially achieve AGI; it's just a matter of who gets there faster. OpenAI's success stems from its focus, perhaps because it didn't have as many alternative technical pathways. From another perspective, OpenAI has a strong technical faith, with the founders holding firm beliefs in the underlying technologies of large-scale models. I believe this depth is crucial to OpenAI's success."
 
-If you’re someone who only updates the bare minimum of the template, it should be okay to replace everything with the latest AstroPaper except the above files and directories. It’s like pure Android OS and other vendor-specific OSes like OneUI. The less you modify the base, the less you have to update.
+Secondly, the development of large-scale models reflects the "barrel effect." "Sora's success is based on excellent engineering capabilities, piecing together each sufficiently strong and long 'board' to form a whole," says Yang Mingchuan. Sora integrates multiple technologies, employing the image description generation technique introduced in DALL-E 3 for video data, generating detailed image descriptions through a two-stage fine-tuning process, enriched by GPT-4, and likely using high-quality video materials rendered with UE5. "Although Sora adopts top-notch technologies in each aspect, the end-to-end optimization difficulty is immense. It combines technologies from multiple domains, including large-scale text models and multimodal models, making it a comprehensive solution. Only with broad vision and technical breadth can technical personnel combine multiple technologies into a cohesive whole, solving problems previously deemed unthinkable." Conversely, competitors with shortcomings in certain technical capabilities will struggle to launch equivalent products.
 
-You can manually replace every file one by one, or you can use the magic of git to update everything. I won’t show you the manual replacement process since it is very straightforward. If you’re not interested in that straightfoward and inefficient method, bear with me 🐻.
+Yang Wei believes that Google's current passive position is not solely due to technical issues. She argues that the complexity of artificial intelligence extends beyond technology to ethical dimensions. Such multidimensional complexity and uncertainty pose greater challenges to technological giants like Google. The extensive scale of research talent may lead to disagreements or conflicts among developers regarding technical pathways and AI ethics, hampering innovation.
 
-### Updating AstroPaper using Git
+Whether Google can reverse its situation and achieve strong integration of AI technology and applications tests the leadership of its CEO. Yang Wei believes that the development of AI technology is closely linked to the field of management studies. "Whether leaders possess the courage, strength, and means to integrate existing enterprise resources to seek new paths forward, I believe this is crucial," she says.
 
-**IMPORTANT!!!**
+03
+nvestment Opportunities in Technology
 
-> Only do the following if you know how to resolve merge conflicts. Otherwise, you’d better replace files manually or update dependencies only.
+Artificial intelligence is a combination of talents from various fields. In the development of AI technology, it requires the involvement of talents in physics, simulation technology, and more.
 
-First, add astro-paper as the remote in your project.
+Temporal and Spatial Compression
+During a public lecture, Professor Xu Ke from the University of Hong Kong's Computer Science Department mentioned that Sora's technical roadmap clearly indicates the need for both temporal and spatial compression, which is a key focus. However, many investors currently only focus on the Diffusion and Transformer pathways, overlooking temporal and spatial compression. Without achieving compression, it will be challenging to produce lifelike videos.
 
-```bash
-git remote add astro-paper https://github.com/satnaing/astro-paper.git
-```
+In spatial compression, the functionality of text-based images is first reduced from high resolution to low resolution using an encoder, then restored using a decoder. After spatial compression, the token processed by the software decreases from 1k×2k to 256 pixels × 256 pixels.
 
-Checkout to a new branch in order to update the template. If you know what you’re doing and you’re confident with your git skill, you can omit this step.
+In temporal compression, assuming a video duration of 20 seconds, with 25 frames per second, and an image resolution of 1k×2k, the token processed amounts to 1k×2k×25 frames/second×20 seconds. Thus, compression in the temporal dimension is necessary. Professor Xu Ke believes, "The reason why Pika and Runway cannot generate long videos is because they only perform spatial compression, neglecting temporal compression."
 
-```bash
-git checkout -b build/update-astro-paper
-```
+Path to the Physical World
+The motivation behind OpenAI's training of Sora is: "We are teaching AI how to understand and simulate motion in the physical world, with the goal of training models that can help people solve problems requiring interaction with the real world." "Our research results indicate that expanding video generation models is a feasible path to building a general simulator for the physical world," says Yang Mingchuan.
 
-Then, pull the changes from astro-paper by running
+Yang Mingchuan believes that OpenAI follows the path of the law of scale, with Sora relying on large-scale data probability models to simulate the physical world. Because no physical constraints are introduced, the physical simulation engine merely simulates a real-world scenario, making it unable to achieve the optimal physical constraint solution. Therefore, it's not surprising that Sora produces some video images that violate physical laws, such as objects passing through each other or deforming, like a basketball passing through the side of a hoop or dogs passing through each other while walking. Meta has always emphasized the world model, which is a large model constrained by physical laws. "Currently, artificial intelligence is in the simulation stage, followed by the emulation stage, and then the stage of fully adhering to physical laws, namely the world model stage. Each stage requires core technological support. Several major companies may have several development paths: continuing to follow the law of scale and further increasing training data and volume, or introducing prior physical laws. Which path can go further is currently uncertain. However, one thing is certain: in the development of artificial intelligence technology, the involvement of talents in physics, simulation technology, and other fields is necessary; artificial intelligence is a combination of talents from various fields."
 
-```bash
-git pull astro-paper main
-```
+Opportunities in Chips
+On March 19, 2024, NVIDIA announced the launch of its new generation AI chip architecture, Blackwell, at the GPU Technology Conference (GTC). The first Blackwell chip, named GB200, is dubbed the "world's most powerful" AI chip. For example, in the GB200 NVL rack-scale system, equipped with 36 Grace Blackwell super chips, the inference performance can be improved by up to 30 times compared to the same number of H100 Tensor Core graphics processing units, while power consumption and cost are reduced to 1/25 of the previous generation. Companies such as Amazon Web Services, Dell, Google, Meta, Microsoft, OpenAI, Oracle, and Tesla will adopt this new chip architecture.
 
-If you face `fatal: refusing to merge unrelated histories` error, you can resolve that by running the following command
+Yang Wei stated that the rapid growth in NVIDIA's chip computing capabilities provides certain possibilities for the future training of large models. However, the disadvantageous aspect for China is that since GPU performance is already very good, the likelihood of users switching to other chips is minimal. Currently, the available chip in China is the H20 chip, with computational power only a fraction of the H200.
 
-```bash
-git pull astro-paper main --allow-unrelated-histories
-```
+In March, Jiang Tao, a fellow of the American Association for the Advancement of Science (AAAS), posted a message mentioning that cloud-based large language models (LLMs) are battlegrounds for major companies that ordinary people cannot afford to play in. However, LLMs at the edge have the potential for rapid development, driving the development of terminal inference chips. In addition, NVIDIA will also face challenges, as ASIC inference chips are expected to develop.
 
-After running the above command, you’re likely to encounter conflicts in your project. You'll need to resolve these conflicts manually and make the necessary adjustments according to your needs.
+Yang Wei agrees with Jiang Tao's viewpoint, stating that the technological path of inference chips is reliable. "Once a company truly surpasses NVIDIA in computing power, it will be a completely new opportunity."
 
-After resolving the conflicts, test your blog thoroughly to ensure everything is working as expected. Check your articles, components, and any customizations you made.
+04
 
-Once you're satisfied with the result, it's time to merge the update branch into your main branch (only if you are updating the template in another branch). Congratulations! You've successfully updated your template to the latest version. Your blog is now up-to-date and ready to shine! 🎉
+The Business Logic of the AI Era
 
-## Conclusion
+In terms of development direction, Chinese companies are more pragmatic, with faster action in application, and have more practical scenarios than American startups. I call it "practical innovation."
 
-In this article, I've shared some of my insights and processes for updating dependencies and the AstroPaper template. I genuinely hope this article proves valuable and assists you in managing your projects more efficiently.
+Professor Xu Ke mentioned in a public lecture that the entrepreneurial landscape of the AI 1.0 era is different from that of the 2.0 era.
 
-If you have any alternative or improved approaches for updating dependencies/AstroPaper, I would love to hear from you. Thus, don't hesitate to start a discussion in the repository, email me, or open an issue. Your input and ideas are highly appreciated!
+In the AI 1.0 era, it was similar to project-based work, where AI algorithms were custom-tailored for specific project needs, such as facial recognition data collection. Due to extensive open-sourcing, algorithm barriers lowered, making proprietary data and engineering capabilities more crucial.
 
-Please understand that my schedule is quite busy these days, and I may not be able to respond quickly. However, I promise to get back to you as soon as possible. 😬
+The AI 2.0 era will witness the rise of AI platform companies (such as OpenAI). Foundation models have better generalization capabilities, and by fine-tuning these models at lower costs, they can adapt to tasks in different fields.
 
-Thank you for taking the time to read this article, and I wish you all the best with your projects!
+Xu Ke believes that teams in this era do not require many people, but they definitely need a small number of top scientists in the generative AI field. Small, refined platform companies will be able to ensure future profitability. These companies are less likely to open-source once they are closely aligned with practical applications. Due to the high computational requirements, only a few teams can focus on text-based video directions. Once a technological barrier is established, future competitors will find it difficult to "overtake in curves."
+
+The outcome of the 2.0 era is "model as platform" and "model as product." Users are willing to pay higher prices to use excellent models.
+
+Xu Ke mentioned that AI 2.0 technologies will initially be used in high-tolerance fields, such as content creation, entertainment, gaming, 3D, and even the metaverse, to enhance the productivity of white-collar workers, rather than replace blue-collar jobs as in the AI 1.0 era.
+
+Li Mingshun, Executive Director of the AI Application Working Group at the Industrial Culture Development Center of the Ministry of Industry and Information Technology, who just returned from a visit to Silicon Valley, is very optimistic about the opportunities for Chinese companies in the application end. He believes that in some important scenes of AI + smart hardware/e-commerce/medical/industrial sectors, Chinese companies may even surpass some American companies. "In terms of development direction, Chinese companies are more pragmatic, with faster action in application, and have more practical scenarios than American startups. I call it 'practical innovation.' These opportunities are beyond the reach of American entrepreneurs in the short term. A large number of American startup companies in Silicon Valley mainly focus on entrepreneurship around large models."
+
+For example, the "real estate + AI" market in the United States is a $30 trillion market, where the construction industry from design to smart homes to e-commerce is AI-enabled. In this field, Musk invested in Boxable, a company specializing in prefabricated construction, using AI technology to improve existing industries. "In recent years, China has made good progress in prefabricated construction, with many applications in homestays and rural villas. China's supply chain has cost advantages over the United States. Chinese companies need to combine cross-border e-commerce and AI applications to make assembly technology more intelligent to seize this $30 trillion market opportunity," Li Mingshun said.
+
+Although Li Mingshun sees China adopting a follow-up strategy in the field of large models, the country's emphasis and investment in artificial intelligence ensure that there won't be too much intergenerational difference between China and the United States. Although there are differences in data between China and the United States, with the United States having an advantage in computing power, as large models advance and open-source ecosystems grow, these differences will not be too significant.
+
+However, when comparing the underlying data quality of artificial intelligence, Li Mingshun believes that data in the United States is more unified, while China has more information silos.
+
+Li Mingshun believes that since the birth of Sora, people have had a clearer understanding of the overall pattern and development path of AI large models. "Today's AI large models are based on 'violent' competition, using large-scale computing power, large-scale funding, large-scale data, and the capabilities of large platforms to compete." The awareness of this in both China and the United States is becoming stronger. Companies with a market value of over a trillion dollars in the United States are almost all comprehensively deploying artificial intelligence, with Apple even giving up its electric vehicle business. Alibaba not only develops its own "Tongyi Qianwen" large model but also invests in a series of leading AI companies to participate in the competition.
+
+The competition between countries in artificial intelligence is actually about the power to set standards and rules of the game. Li Mingshun said, "Given the current development situation, there may be two parallel systems in the East and the West. Signs of two systems have already appeared in fields such as automobiles, communications, and supply chains. In the fields of AI chips and large models, two independent systems in the East and the West are gradually forming. Therefore, Chinese companies must accept this big environment, survive this cycle, and combine their advantages to build their own standardized system."
+
+How artificial intelligence goes global is also a topic of concern for entrepreneurs in this field. Existing technology systems and supply chains need to find suitable markets. Li Mingshun believes that Southeast Asia, the Middle East, and Africa are existing battlegrounds for Chinese companies going global, with South America being relatively neutral. Relations between China and Australia have shown some signs of relaxation, and relations between Japan and China have cooled politically but warmed economically. These places are all markets for Chinese artificial intelligence companies going global. "I think the market economy is a very clever way of allocating resources. As long as there is demand, products and technologies with high cost-effectiveness will flow past. Therefore, Chinese companies need to transition from 'Made in China' to 'Made by Chinese,' thinking from the perspective of global citizens and local citizens. When companies achieve localization, this is true globalization, not just 'going global'," Li Mingshun said.
+
+
+
+
