@@ -1,14 +1,14 @@
 ---
 title: Non-technical Insights into Sora
 author: Sat Naing
-pubDatetime: 2022-09-21T05:17:19Z
+pubDatetime: 2024-04-21T05:17:19Z
 slug: non-technical-insights-sora-impact-societal-development
 featured: false
 draft: false
 tags:
-  - docs
-  - forestry-cms
-  - astro-paper
+  - sora
+  - sora ai
+  - text to video
 ogImage: https://res.cloudinary.com/noezectz/v1663745737/astro-paper/astropaper-x-forestry-og_kqfwp0.png
 description:
   Explore the non-technical aspects of Sora, OpenAI's groundbreaking text-to-video tool, and its potential impact on various industries and societal development. Delve into Sora's unique characteristics, its implications for sectors like film, advertising, and education, and the challenges posed by AI's rapid advancement. Join the discussion on AI's future and our readiness for its transformative effects.
