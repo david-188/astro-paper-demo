@@ -1,88 +1,53 @@
 ---
-title: How Do I Develop My Terminal Portfolio Website with React
+title: The video generator Sora evokes mixed feelings | The tide of technological innovation in the world
 author: Sat Naing
-pubDatetime: 2022-06-09T03:42:51Z
-slug: how-do-i-develop-my-terminal-portfolio-website-with-react
+pubDatetime: 2024-02-09T03:42:51Z
+slug: The-video-generator-Sora-evokes-mixed-feelings
 featured: false
 draft: false
 tags:
-  - JavaScript
-  - ReactJS
-  - ContextAPI
-  - Styled-Components
-  - TypeScript
-description:
-  "EXAMPLE POST: Developing a terminal-like website using ReactJS, TypeScript and Styled-Components.
-  Includes features like autocomplete, multiple themes, command hints etc."
+  - sora
+  - sora ai
+  - text to video
+description: The video generator Sora evokes mixed feelings | The tide of technological innovation in the world
 ---
 
-> This article is originally from my [blog post](https://satnaing.dev/blog/posts/how-do-i-develop-my-terminal-portfolio-website-with-react). I put this article to demonstrate how you can write blog posts/articles using AstroPaper theme.
+Following the launch of ChatGPT, at the beginning of the Year of the Dragon, OpenAI has released its latest artificial intelligence (AI) model—Sora, a text-to-video program. This tool can generate realistic and imaginative videos similar to Hollywood movies based on simple text descriptions.
 
-Developing a terminal-like website using ReactJS, TypeScript and Styled-Components. Includes features like autocomplete, multiple themes, command hints etc.
+An article on the website of the British magazine "New Scientist" on February 17th pointed out that the arrival of Sora may be "both loved and feared" by people. Many scientists welcome its arrival, believing that it will further advance technological progress. However, some people are concerned that Sora may be used by malicious individuals to create deepfake videos, exacerbating the spread of errors and false information.
 
-![Sat Naing's Terminal Portfolio](https://satnaing.dev/_ipx/w_2048,q_75/https%3A%2F%2Fres.cloudinary.com%2Fnoezectz%2Fimage%2Fupload%2Fv1654754125%2FSatNaing%2Fterminal-screenshot_gu3kkc.png?url=https%3A%2F%2Fres.cloudinary.com%2Fnoezectz%2Fimage%2Fupload%2Fv1654754125%2FSatNaing%2Fterminal-screenshot_gu3kkc.png&w=2048&q=75)
+Two powerful features incubated by technology
 
-## Table of contents
+Sora, which means "sky" in Japanese, was chosen by the team behind it because it "evokes infinite creative potential." The system is a recent example of generative AI. Generative AI can create text, images, and sound in real time.
 
-## Intro
+Currently, Sora can be used independently with text commands or combined with images to create 60-second videos, all in a single shot. For example, a demonstration video is generated based on the following text description: a fashionable woman strolling along a Tokyo street filled with city signs, with neon lights flashing on both sides, emitting a warm glow. Sora not only accurately presents details but also generates characters with rich emotions.
 
-Recently, I've developed and published my portfolio + a blog. I’m glad I got some good feedback for it. Today, I want to introduce my new terminal-like portfolio website. It is developed using ReactJS, TypeScript. I got this idea from CodePen and YouTube.
+Currently, there are 48 videos available on the OpenAI website, including a dog frolicking in the snow, vehicles traveling on the road, and even more fantastical scenes such as sharks swimming between city skyscrapers. Some experts believe that Sora's performance surpasses that of similar models, marking a significant leap forward in text-to-video technology.
 
-## Tech Stack
+To achieve a higher level of realism, Sora combines two different AI technologies. One is similar to the diffusion models used in AI image generators such as DALL-E, which learn to transform random image pixels into coherent images; the other is the "transformer architecture" technology, which is used to concatenate sequence data based on contextual content. For example, large language models use transformer architecture to assemble scattered words into understandable sentences. OpenAI decomposes video clips into visual "spatio-temporal patches," and Sora's transformer architecture handles these patches.
 
-This project is a frontend project without any backend codes. The UI/UX part is designed in Figma. For the frontend user-interface, I chose React over pain JavaScript and NextJS. Why?
+Van Linxi, a senior research scientist at NVIDIA, called Sora a "data-driven physics engine" that can simulate the real world.
 
-- Firstly, I want to write declarative code. Managing HTML DOM using JavaScript imperatively is really tedious.
-- Secondly, because it is React!!! It is fast, and reliable.
-- Lastly, I don’t need much of the SEO features, routing and image optimization provided by NextJS.
+There is still much room for improvement
 
-And of course there's TypeScript for type checking.
+Although the videos generated by Sora are impressive, they are not without flaws.
 
-For styling, I took a different approach than what I usually do. Instead of choosing Pure CSS, Sass, or Utility CSS Framework like TailwindCSS, I chose the CSS-in-JS way (Styled-Components). Although I’ve known about Styled-Components for some time, I’ve never tried it out. So, the writing style and structures of Styled-Components in this project may not be very organized or very good.
+OpenAI admits that the current Sora model also has weaknesses. It may be difficult to accurately simulate the physical properties of complex scenes, and it may not understand causality. For example, the system recently generated a video of a person eating a cookie, but no matter how the cookie was eaten, it did not get smaller, and the bitten cookie miraculously had no bite marks. In addition, the model may confuse spatial details of text prompts and may have difficulty accurately describing events that occur over time.
 
-This project doesn’t need very complex state management. I just use ContextAPI in this project for multiple theming and to avoid prop drilling.
+Avand Narayanan of Princeton University pointed out that Sora-generated videos still encounter some strange minor issues when depicting complex scenes with a lot of action.
 
-Here’s a quick recap for the tech stack.
+May make it difficult to distinguish between truth and falsehood
 
-- Frontend: [ReactJS](https://reactjs.org/ "React Website"), [TypeScript](https://www.typescriptlang.org/ "TypeScript Website")
-- Styling: [Styled-Components](https://styled-components.com/ "Styled-Components Website")
-- UI/UX: [Figma](https://figma.com/ "Figma Website")
-- State Management: [ContextAPI](https://reactjs.org/docs/context.html "React ContextAPI")
-- Deployment: [Netlify](https://www.netlify.com/ "Netlify Website")
+In addition to speeding up the work of experienced filmmakers, Sora may also quickly and cheaply produce false information on the internet, making it harder for people to distinguish between truth and falsehood.
 
-## Features
+OpenAI is still trying to understand the dangers of Sora, so the system has not yet been released to the public. Instead, they are sharing this technology with a few scholars and other external researchers, hoping to leverage their wisdom to identify ways in which the system may be misused.
 
-Here are some features of the project.
+In the "red team" exercise conducted by OpenAI for Sora, experts attempt to undermine the AI model's protective measures to assess the likelihood of its misuse. An OpenAI spokesperson stated that those currently involved in testing Sora are "experts in areas such as misinformation, hate speech, and bias."
 
-### Multiple Themes
+This testing is crucial because Sora could be used by malicious actors to generate false videos to harass others or even influence political elections. Academia, industry, government, and AI experts are all concerned that AI-generated "deepfake" content could lead to the widespread dissemination of false and erroneous information.
 
-Users can change multiple themes. At the time of writing this post, there are 5 themes; and more themes will probably be added in the future. The selected theme is saved in local storage so that the theme won’t change on page refresh.
+Hany Farid of the University of California, Berkeley, believes that, like other technologies in the field of generative AI, there is reason to believe that text-to-video technology will continue to improve. Once Sora is combined with AI-driven voice cloning technology, it will provide malicious actors with new tools to create realistic deepfake content, making it increasingly difficult for people to distinguish between truth and falsehood.
 
-![Setting different theme](https://i.ibb.co/fSTCnWB/terminal-portfolio-multiple-themes.gif)
+OpenAI has added watermarks to the videos generated by the system to indicate that they were generated by AI. However, the company also acknowledges that these watermarks can be removed and may be difficult to detect.
 
-### Command-line Completion
-
-To look and feel as close to the actual terminal as possible, I put a command-line completion feature which auto fills in partially typed commands by simply pressing ‘Tab’ or ‘Ctrl + i’.
-
-![Demonstrating command-line completion](https://i.ibb.co/CQTGGLF/terminal-autocomplete.gif)
-
-### Previous Commands
-
-Users can go back to the previous commands or navigate the previously typed commands by pressing Up & Down Arrows.
-
-![Going back to previous commands with UP Arrow](https://i.ibb.co/vD1pSRv/terminal-up-down.gif)
-
-### View/Clear Command History
-
-previously typed commands can be viewed by typing ‘history’ in the command line. All the command history and terminal screen can be wiped out by typing ‘clear’ or pressing ‘Ctrl + l’.
-
-![Clearing the terminal with 'clear' or 'Ctrl + L' command](https://i.ibb.co/SJBy8Rr/terminal-clear.gif)
-
-## Outro
-
-This is a really fun project, and one special part of this project is I had to focus on logic rather than user-interface (even though this is kind of a frontend project).
-
-## Project Links
-
-- Website: [https://terminal.satnaing.dev/](https://terminal.satnaing.dev/ "https://terminal.satnaing.dev/")
-- Repo: [https://github.com/satnaing/terminal-portfolio](https://github.com/satnaing/terminal-portfolio "https://github.com/satnaing/terminal-portfolio")
+An OpenAI spokesperson emphasized that before using Sora for OpenAI's products, the company is taking several important security measures. For example, the company has implemented automated processes aimed at preventing its commercial AI models from generating false content targeting politicians and celebrities.

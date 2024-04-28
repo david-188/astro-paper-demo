@@ -2,193 +2,46 @@
 author: Simon Smale
 pubDatetime: 2024-01-03T20:40:08Z
 modDatetime: 2024-01-08T18:59:05Z
-title: How to use Git Hooks to set Created and Modified Dates
+title: Sora Makes Hollywood Nervous
 featured: false
 draft: false
 tags:
-  - docs
-  - FAQ
+  - sora
+  - sora ai
+  - text to video
+
 canonicalURL: https://smale.codes/posts/setting-dates-via-git-hooks/
-description: How to use Git Hooks to set your Created and Modified Dates on AstroPaper
+description: Sora Makes Hollywood Nervous
 ---
 
-In this post I will explain how to use the pre-commit Git hook to automate the input of the created (`pubDatetime`) and modified (`modDatetime`) in the AstroPaper blog theme frontmatter
+According to the recent report by the American magazine "Variety," the latest generative artificial intelligence model released by the American AI company OpenAI, named Sora, has recently garnered significant attention both inside and outside the industry. Its powerful ability to generate videos up to 1 minute in length based on text commands has excited professionals in the IT and arts sectors, as well as enthusiasts. However, it has also raised concerns within the entertainment industry, including Hollywood, as the prophecy and related risks of AI and robots replacing human jobs, as depicted in the movie "I, Robot," have once again become a hot topic.
 
-## Table of contents
+Higher Video Quality and Realism
 
-## Have them Everywhere
+"Since OpenAI released the text-to-video generation model Sora last week, people's predictions about this AI functionality have become increasingly 'anxious.' After all, compared to similar tools before, OpenAI seems to have made a huge leap forward," commented "Variety." The report states that based on the current video output samples, Sora is the most impressive video generation model to date, with its "realistic effects" expected to play a role in high-end entertainment. However, due to certain limitations, it is currently not capable of handling the scale of Hollywood movie production. Tom Graham, CEO of the AI company Metaphysics, believes, "Today's creative workers demand comprehensive control over performances and scenes. Models like Sora still have a long way to go to generate Hollywood movies."
 
-[Git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) are great for automating tasks like [adding](https://gist.github.com/SSmale/3b380e5bbed3233159fb7031451726ea) or [checking](https://itnext.io/using-git-hooks-to-enforce-branch-naming-policy-ffd81fa01e5e) the branch name to your commit messages or [stopping you committing plain text secrets](https://gist.github.com/SSmale/367deee757a9b2e119d241e120249000). Their biggest flaw is that client-side hooks are per machine.
+In fact, before the emergence of Sora, there were already AI video generation and editing models with similar functions in the industry, such as Runway and Pika. These models can generate short videos based on text prompts or 2D images, derive animations from static images, repair, replace, or insert new visual elements, and extend shots beyond the original frames, enriching the video content people need.
 
-You can get around this by having a `hooks` directory and manually copy them to the `.git/hooks` directory or set up a symlink, but this all requires you to remember to set it up, and that is not something I am good at doing.
+"Fortune" reported that some Hollywood companies have already applied Runway technology to their projects and received Oscars. In comparison, Sora has achieved some significant upgrades and breakthroughs. For example, the quality and realism of the videos are higher and more lifelike, resembling the real world. The length of the videos has also reached 1 minute, capable of presenting the relevant information needed from the text. It is worth noting that Runway's second-generation model, launched in August last year, could only generate videos up to 18 seconds each time.
 
-As this project uses npm, we are able to make use of a package called [Husky](https://typicode.github.io/husky/) (this is already installed in AstroPaper) to automatically install the hooks for us.
+Furthermore, Sora has achieved "temporal consistency," meaning that even when extending videos, it can provide the model with "foresight," ensuring that the video theme remains consistent outside the frame. The video example previously released by Sora, titled "Fashionable Women Walking on Busy Streets," resembles a commercial or movie clip, with characters and scenes showing almost no obvious issues. The movements of the body, details of the hair, and reflections of neon lights appear particularly realistic, which was unimaginable a few years ago.
 
-## The Hook
+"AI Storytelling"
 
-As we want this hook to run as we commit the code to update the dates and then have that as part of our change we are going to use the `pre-commit` hook. This has already been set up by this AstroPaper project, but if it hadn't, you would run `npx husky add .husky/pre-commit 'echo "This is our new pre-commit hook"'`.
+"Variety" believes that with its powerful capabilities, Sora has the potential to create movies through AI. These output videos can be stitched together as "shots" to form a movie. However, it is essential to maintain the continuity of characters and scenes. Nevertheless, videos generated based on text prompts and conditional parameters can only create longer "AI stories" if the characters remain consistent in the next scenes.
 
-Navigating to the `hooks/pre-commit` file, we are going to add one or both of the following snippets.
+Currently, the large-scale application of Sora in Hollywood still faces many obstacles. Besides the lack of continuity, this model may "misinterpret" the appearance and behavior in the real world, resulting in visible "physical failures" in images and video output. A recent "failure case" of the Sora model circulating on the internet shows chairs moving as if they were alive, completely beyond the physical possibilities of the real world, and people even "disappearing out of thin air." Such "mistakes," besides being laughable, also indicate that there are still many problems to be solved before Sora can create movies.
 
-### Updating the modified date when a file is edited
+Since Sora's video output is based on rendering rather than physical modeling, it cannot provide sufficient controllability for now. Hollywood filmmakers currently cannot grasp and control it. In the short term, introducing this AI model into the creative process will encounter more problems. It requires OpenAI developers to add more software control parameters and improve based on the exposed defects to produce videos comparable to those shot by humans.
 
----
+Additionally, legal issues such as copyright are also significant reasons why Hollywood cannot directly use Sora. Outputting AI-generated materials to the screen may lead to copyright disputes. Even if AI is only trained using relevant materials, there is still a potential risk of infringement. The key negotiation point of last year's Hollywood writers and actors' strike was the scope of application of artificial intelligence, which has not yet been resolved. Questions such as whether the copyright of videos generated by Sora as a creative assistance tool is protected and whether there is any infringement liability for training materials will make Hollywood studios cautious about getting involved in disputes.
 
-UPDATE:
+Currently, AI tools including Sora may still be used in the early stages of projects, such as quickly generating concept art, character designs, and storyboards to help creators choose directions. However, if an interesting concept character or scene is selected for actual shooting, whether it is for movies, TV shows, or game production, it still faces the risk of copyright claims and copyright protection tracing.
 
-This section has been updated with a new version of the hook that is smarter. It will now not increment the `modDatetime` until the post is published. On the first publish, set the draft status to `first` and watch the magic happen.
+"The Show Begins"
 
----
+Currently, Sora has not been officially opened to all users. Some industry insiders who have tried it out have marveled at its powerful creativity while also discovering various loopholes and risks of misuse. Just like the false information and rumors caused by Deepfake on the internet before, which caused harm to celebrities like Swift and ordinary people, are questions that OpenAI must face. When Google released the AI video model Lumiere in January this year, it admitted that "there is indeed a risk of creating false or harmful content and being abused when using this technology."
 
-```shell
-# Modified files, update the modDatetime
-git diff --cached --name-status |
-grep -i '^M.*\.md$' |
-while read _ file; do
-  filecontent=$(cat "$file")
-  frontmatter=$(echo "$filecontent" | awk -v RS='---' 'NR==2{print}')
-  draft=$(echo "$frontmatter" | awk '/^draft: /{print $2}')
-  if [ "$draft" = "false" ]; then
-    echo "$file modDateTime updated"
-    cat $file | sed "/---.*/,/---.*/s/^modDatetime:.*$/modDatetime: $(date -u "+%Y-%m-%dT%H:%M:%SZ")/" > tmp
-    mv tmp $file
-    git add $file
-  fi
-  if [ "$draft" = "first" ]; then
-    echo "First release of $file, draft set to false and modDateTime removed"
-    cat $file | sed "/---.*/,/---.*/s/^modDatetime:.*$/modDatetime:/" | sed "/---.*/,/---.*/s/^draft:.*$/draft: false/" > tmp
-    mv tmp $file
-    git add $file
-  fi
-done
-```
+After Sora is opened to ordinary users and social media creators in the future, a massive amount of video content will inevitably be created. However, not everyone will pay attention to legal issues like creative or advertising professionals. Currently, OpenAI promises to gather feedback from artists, educators, and policymakers globally to understand people's concerns about this technology.
 
-`git diff --cached --name-status` gets the files from git that have been staged for committing. The output looks like:
-
-```shell
-A       src/content/blog/setting-dates-via-git-hooks.md
-```
-
-The letter at the start denotes what action has been taken, in the above example the file has been added. Modified files have `M`
-
-We pipe that output into the grep command where we are looking at each line to find that have been modified. The line needs to start with `M` (`^(M)`), have any number of characters after that (`.*`) and end with the `.md` file extension (`.(md)$`).This is going to filter out the lines that are not modified markdown files `egrep -i "^(M).*\.(md)$"`.
-
----
-
-#### Improvement - More Explicit
-
-This could be added to only look for files that we markdown files in the `blog` directory, as these are the only ones that will have the right frontmatter
-
----
-
-The regex will capture the two parts, the letter and the file path. We are going to pipe this list into a while loop to iterate over the matching lines and assign the letter to `a` and the path to `b`. We are going to ignore `a` for now.
-
-To know the draft staus of the file, we need its frontmatter. In the following code we are using `cat` to get the content of the file, then using `awk` to split the file on the frontmatter separator (`---`) and taking the second block (the fonmtmatter, the bit between the `---`). From here we are using `awk` again to find the draft key and print is value.
-
-```shell
-  filecontent=$(cat "$file")
-  frontmatter=$(echo "$filecontent" | awk -v RS='---' 'NR==2{print}')
-  draft=$(echo "$frontmatter" | awk '/^draft: /{print $2}')
-```
-
-Now we have the value for `draft` we are going to do 1 of 3 things, set the modDatetime to now (when draft is false `if [ "$draft" = "false" ]; then`), clear the modDatetime and set draft to false (when draft is set to first `if [ "$draft" = "first" ]; then`), or nothing (in any other case).
-
-The next part with the sed command is a bit magical to me as I don't often use it, it was copied from [another blog post on doing something similar](https://mademistakes.com/notes/adding-last-modified-timestamps-with-git/). In essence, it is looking inside the frontmatter tags (`---`) of the file to find the `pubDatetime:` key, getting the full line and replacing it with the `pubDatetime: $(date -u "+%Y-%m-%dT%H:%M:%SZ")/"` same key again and the current datetime formatted correctly.
-
-This replacement is in the context of the whole file so we put that into a temporary file (`> tmp`), then we move (`mv`) the new file into the location of the old file, overwriting it. This is then added to git ready to be committed as if we made the change ourselves.
-
----
-
-#### NOTE
-
-For the `sed` to work the frontmatter needs to already have the `modDatetime` key in the frontmatter. There are some other changes you will need to make for the app to build with a blank date, see [further down](#empty-moddatetime-changes)
-
----
-
-### Adding the Date for new files
-
-Adding the date for a new file is the same process as above, but this time we are looking for lines that have been added (`A`) and we are going to replace the `pubDatetime` value.
-
-```shell
-# New files, add/update the pubDatetime
-git diff --cached --name-status | egrep -i "^(A).*\.(md)$" | while read a b; do
-  cat $b | sed "/---.*/,/---.*/s/^pubDatetime:.*$/pubDatetime: $(date -u "+%Y-%m-%dT%H:%M:%SZ")/" > tmp
-  mv tmp $b
-  git add $b
-done
-```
-
----
-
-#### Improvement - Only Loop Once
-
-We could use the `a` variable to switch inside the loop and either update the `modDatetime` or add the `pubDatetime` in one loop.
-
----
-
-## Populating the frontmatter
-
-If your IDE supports snippets then there is the option to create a custom snippet to populate the frontmatter.[In AstroPaper v4 will come with one for VSCode by default.](https://github.com/satnaing/astro-paper/pull/206)
-
-<video autoplay muted="muted" controls plays-inline="true" class="border border-skin-line">
-  <source src="https://github.com/satnaing/astro-paper/assets/17761689/e13babbc-2d78-405d-8758-ca31915e41b0" type="video/mp4">
-</video>
-
-## Empty `modDatetime` changes
-
-To allow Astro to compile the markdown and do its thing, it needs to know what is expected in the frontmatter. It does this via the config in `src/content/config.ts`
-
-To allow the key to be there with no value we need to edit line 10 to add the `.nullable()` function.
-
-```typescript
-const blog = defineCollection({
-  type: "content",
-  schema: ({ image }) =>
-    z.object({
-      author: z.string().default(SITE.author),
-      pubDatetime: z.date(),
--     modDatetime: z.date().optional(),
-+     modDatetime: z.date().optional().nullable(),
-      title: z.string(),
-      featured: z.boolean().optional(),
-      draft: z.boolean().optional(),
-      tags: z.array(z.string()).default(["others"]),
-      ogImage: image()
-        .refine(img => img.width >= 1200 && img.height >= 630, {
-          message: "OpenGraph image must be at least 1200 X 630 pixels!",
-        })
-        .or(z.string())
-        .optional(),
-      description: z.string(),
-      canonicalURL: z.string().optional(),
-      readingTime: z.string().optional(),
-    }),
-});
-```
-
-To stop the IDE complaining in the blog engine files I have also done the following:
-
-1. added `| null` to line 15 in `src/layouts/Layout.astro` so that it looks like
-
-```typescript
-export interface Props {
-  title?: string;
-  author?: string;
-  description?: string;
-  ogImage?: string;
-  canonicalURL?: string;
-  pubDatetime?: Date;
-  modDatetime?: Date | null;
-}
-```
-
-<!-- This needs to be 2 as it doesn't pick it up with the code block -->
-
-2. added `| null` to line 5 in `src/components/Datetime.tsx` so that it looks like
-
-```typescript
-interface DatetimesProps {
-  pubDatetime: string | Date;
-  modDatetime: string | Date | undefined | null;
-}
-```
+Although AI products like Sora and Runway still have many areas to improve, the "exponential leap speed" is obvious. Tim Urban, author of "The AI Revolution: The Road to Superintelligence," predicts based on this, "The 21st century will achieve 1000 times the progress of the 20th century." The appearance of Sora has also made AI peers and technology companies eager. Kristobal Varenzuela, CEO of Runway, expressed on social media, "The show begins."
