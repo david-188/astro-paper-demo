@@ -4,7 +4,9 @@ layout: ../layouts/AboutLayout.astro
 title: "Submit"
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
+On the seventh day of the Lunar New Year this year, while we were still immersed in the joy and busyness of the Spring Festival, OpenAI quietly made a big move, releasing Sora, a super bombshell.
+
+On February 16th, OpenAI officially announced its first text-to-video model—Sora. The functionality and attributes of Sora are enough to astonish the world: it can directly output videos up to 60 seconds in length through text commands. These videos are not simple videos; they contain highly detailed backgrounds, complex multi-angle shots, and emotionally rich characters. This means that, following text and images, OpenAI is the first to extend advanced AI technology into the field of video.
 
 <!DOCTYPE html>
 <html lang="en">
@@ -69,7 +71,3 @@ AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designe
     </script>
 </body>
 </html>
-
-
-
-
