@@ -59,10 +59,17 @@ const { activeNav } = Astro.props;
         </button>
         <ul id="menu-items" class="display-none sm:flex">
           <li>
+            <a href="/Prompts/" class={activeNav === "Prompts" ? "active" : ""}>
+              Prompts
+            </a>
+          </li>
+
+          <li>
             <a href="/posts/" class={activeNav === "posts" ? "active" : ""}>
               Posts
             </a>
           </li>
+
           <li>
             <a href="/tags/" class={activeNav === "tags" ? "active" : ""}>
               Tags
@@ -73,6 +80,7 @@ const { activeNav } = Astro.props;
               about
             </a>
           </li>
+
           <li>
             <LinkButton
               href="/search/"
@@ -124,13 +132,16 @@ const { activeNav } = Astro.props;
     @apply absolute -top-full left-16 z-50 bg-skin-accent px-3 py-2 text-skin-inverted transition-all focus:top-4;
   }
   .nav-container {
-    @apply mx-auto flex max-w-3xl flex-col items-center justify-between sm:flex-row;
+    @apply mx-auto flex max-w-6xl flex-col items-center justify-between sm:flex-row;
   }
   .top-nav-wrap {
     @apply relative flex w-full items-start justify-between p-4 sm:items-center sm:py-8;
   }
   .logo {
     @apply absolute py-1 text-xl font-semibold sm:static sm:text-2xl;
+    color: blue; /* 设置文本颜色为蓝色 */
+    font-family: Arial, sans-serif; /* 设置文本字体为 Arial 或者系统默认的 sans-serif 字体 */
+    font-size: 50px; /* 设置字体大小为 16 像素 */
   }
   .hamburger-menu {
     @apply self-end p-2 sm:hidden;
