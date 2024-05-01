@@ -61,30 +61,47 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         <button type="submit">Subscribe</button>
       </form>
 
-      <div id="success-message">
-        <p>Sucess Thanks For Joing Us!</p>
+      <div id="success-message" style="display: none;">
+        <p>Success! Thanks for joining us!</p>
       </div>
 
       <script>
-        document
-          .getElementById("subscribe-form")
-          .addEventListener("submit", function (event) {
-            event.preventDefault();
-            var emailInput = document.getElementById("email");
-            var email = emailInput.value;
-            // Here you can perform validation of the email address if needed
+        function handleFormSubmit(event) {
+          event.preventDefault();
+          var emailInput = event.target.querySelector("#email");
+          var email = emailInput.value;
+          // 这里可以添加邮箱验证等操作
 
-            // Simulating a successful subscription
-            showSuccessMessage();
-          });
+          showSuccessMessage();
+        }
 
         function showSuccessMessage() {
           var successMessage = document.getElementById("success-message");
           successMessage.style.display = "block";
           setTimeout(function () {
             successMessage.style.display = "none";
-          }, 3000); // Hide the message after 3 seconds
+          }, 3000); // 3秒后隐藏消息
         }
+
+        document.addEventListener("DOMContentLoaded", function () {
+          // 检查会话存储中是否包含订阅成功的状态
+          var subscribed = sessionStorage.getItem("subscribed");
+          if (subscribed === "true") {
+            showSuccessMessage();
+          }
+
+          // 在页面加载后重新绑定事件监听器
+          document.addEventListener("submit", function (event) {
+            if (event.target && event.target.id === "subscribe-form") {
+              handleFormSubmit(event);
+            }
+          });
+        });
+
+        // 在离开页面时，将订阅成功的状态保存到会话存储中
+        window.addEventListener("beforeunload", function () {
+          sessionStorage.setItem("subscribed", "true");
+        });
       </script>
     </section>
   </main>
@@ -263,7 +280,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     font-family: Arial, sans-serif;
     color: red;
     font-size: 25px; /* 设置字体大小为 16 像素 */
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     text-align: left;
   }
 
@@ -273,7 +290,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     font-family: Helvetica, sans-serif;
     color: green;
     font-size: 22px; /*设置字体大小为 16 像素 */
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: left;
     white-space: pre-wrap;
   }
